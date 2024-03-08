@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "VTC",
+    "slug": "VTC",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/media/ic_launcher.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/media/Hotpot2.png",
+      "resizeMode": "cover"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/media/applogo.png"
+      },
+      "package": "com.ezi0.VTC", 
+      "permissions": ["WRITE_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ad22c27-1ee8-409b-8809-1f00e7eb7748"
+      }
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Virtual Tour Cafe to access your photos.",
+          "savePhotosPermission": "Allow Virtual Tour Cafe to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "flipper": true
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app need to access your camera."
+        }
+      ]
+    ]
+  }
+}
